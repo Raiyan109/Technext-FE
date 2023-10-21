@@ -13,16 +13,16 @@ const Home = () => {
 
             {/* Search and Filters */}
             <div className='flex justify-center items-center text-sm'>
-                <div className='flex justify-between items-center'>
+                <div className='flex flex-col md:flex-row justify-between items-center gap-5 md:gap-24 lg:gap-32 px-5 py-10 md:px-6 md:py-5'>
                     {/* Search */}
                     <div>
                         <form>
                             <div className="max-w-xl">
                                 <div className="flex space-x-4">
                                     <div className="flex rounded-md overflow-hidden w-full">
-                                        <input type="text" className="w-full rounded-md rounded-r-none border border-black text-xl p-2" placeholder='Search' />
-                                        <button className="bg-indigo-600 text-white px-6 text-lg font-semibold py-4 rounded-r-md">
-                                            <BsSearch />
+                                        <input type="text" className="w-full rounded-md rounded-r-none border border-black text-sm p-2" placeholder='Search' />
+                                        <button className="bg-indigo-600 text-white px-3 text-lg font-semibold py-3 rounded-r-md">
+                                            <BsSearch className='text-sm' />
                                         </button>
                                     </div>
 
@@ -31,13 +31,23 @@ const Home = () => {
                         </form>
                     </div>
                     {/* Filters */}
-                    <div className='flex items-center gap-9 py-12 px-20'>
+                    <div className='flex flex-col-reverse md:flex-row items-center gap-9 py-12 px-20'>
                         <div>
-                            <Select />
+                            <Select
+                                option1='By Launch Date'
+                                option2='Last week'
+                                option3='Last month'
+                                option4='Last year'
+                            />
                         </div>
                         <div className='mb-12'>
                             <Checkbox />
-                            <Select />
+                            <Select
+                                option1='By Launch Date'
+                                option2='Last week'
+                                option3='Last month'
+                                option4='Last year'
+                            />
                         </div>
                     </div>
                 </div>

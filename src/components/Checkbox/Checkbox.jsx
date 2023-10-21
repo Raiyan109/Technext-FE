@@ -11,7 +11,7 @@ const Checkbox = () => {
                         <polyline points="7.57 15.87 12.62 21.07 23.43 9.93" />
                     </svg>
                 </div>
-                <div>Unchecked</div>
+                <div>Show upcoming only</div>
             </label>
         </div>
     );
