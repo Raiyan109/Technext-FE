@@ -1,6 +1,7 @@
 import { BsSearch } from 'react-icons/bs'
 import Select from '../components/Select/Select';
 import Checkbox from '../components/Checkbox/Checkbox';
+import Items from './Items';
 
 const Home = () => {
     return (
@@ -52,6 +53,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Items />
         </div>
     );
 };
